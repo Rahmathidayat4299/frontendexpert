@@ -12,6 +12,20 @@ class HeroElement extends HTMLElement {
 
   render() {
     this.shadowDOM.innerHTML = `
+    <style>
+    .hero-element .container .bg picture {
+      width: max-content;
+    }
+    .hero-element .container .bg {
+      overflow: hidden;
+      background-size: cover;
+    }
+    .hero-element .container .bg img {
+      width: 100%;
+      height: 550px;
+      object-fit: cover;
+    }
+    </style>
     <div class="hero-element">
       <div class="container">
         <div class="bg">
