@@ -3,7 +3,7 @@
 class HeroElement extends HTMLElement {
   constructor() {
     super();
-    this.shadowDOM = this.attachShadow({ mode: 'open' });
+    this.shadowDOM = this.attachShadow({ mode: "open" });
   }
 
   connectedCallback() {
@@ -15,7 +15,7 @@ class HeroElement extends HTMLElement {
     <div class="hero-element">
       <div class="container">
         <div class="bg">
-		  <picture >
+		  <picture>
             <source media="(max-width: 600px)" type="image/webp" class="lazyload" srcset="../public/heros/hero-image-small.webp">
             <source media="(max-width: 600px)" type="image/jpeg" class="lazyload" srcset="../public/heros/hero-image-small.jpg">
             <img class="lazyload" src="../public/heros/hero-image-large.jpg" alt="Hero Banner"/>
@@ -27,4 +27,4 @@ class HeroElement extends HTMLElement {
   }
 }
 
-customElements.define('hero-element', HeroElement);
+customElements.define("hero-element", HeroElement);
